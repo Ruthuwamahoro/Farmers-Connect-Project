@@ -1,0 +1,142 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container {
+    display: block;
+}
+
+.container {
+
+    display: flex;
+    
+    padding: 30px;
+}
+.status {
+    display: flex;
+    padding-left: 15%;
+    position: relative;
+    bottom: 50px;
+
+    
+}
+
+.status input {
+    margin-right: 20px;
+    width: 200px;
+    
+}
+.status span:nth-of-type(2){
+    height: 20px;
+    align-self: center;
+    text-align: center;
+    color: rgb(254, 227, 18);
+    border: solid;
+    width: 120px;
+    border-color:rgb(254, 227, 18);
+
+}
+
+.status span:nth-of-type(3){
+    height: 20px;
+    
+    align-self: center;
+    text-align: center;
+    color: rgb(128, 128, 244);
+    border: solid;
+    
+    border-color:rgb(128, 128, 244);
+
+}
+.status span:nth-of-type(4){
+    height: 20px;
+    
+    align-self: center;
+    text-align: center;
+    color: green;
+    border: solid;
+    
+    border-color:light rgb(60, 227, 60);
+
+}
+.status span:nth-of-type(5){
+    height: 20px;
+    
+    align-self: center;
+    text-align: center;
+    color: red;
+    border: solid;
+    
+    border-color:dark red;
+
+}
+.status span {
+    border: 1px solid ;
+    
+    border-radius: 8px;
+    margin-left: 30px;
+    padding: 5px 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-input input {
+    margin-left: 20px;
+    border: 1px solid light grey ;
+    opacity: 0.3;
+    height: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+.product-container {
+    
+    background-color: white;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.product-container1 {
+    display: flex;
+    padding-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.product-details{
+    padding-top: 16px;
+    position: relative;
+    left: 50px;
+    line-height: 10px;
+}
+.great-container {
+    width: 71%;
+    padding-left: 15%;
+    
+}
+.container2 {
+    margin-top: 25px;
+}
+.total-price {
+    position: relative;
+    left: 250px;
+    top: 50px;
+    line-height: 0.5;
+}
+
+.total-price small:nth-of-type(2){
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 8px;
+}
+.total-price small:nth-of-type(1){
+    color: grey;
+    opacity: 0.7;
+}
+.total-price h3,.total-price p{
+    position: relative;
+    bottom: 15px;
+    font-size: 15px;
+    left: 109px;
+}
