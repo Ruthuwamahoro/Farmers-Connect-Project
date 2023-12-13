@@ -105,16 +105,23 @@ class FarmerTerminal:
         # Simulate a list of experts in the district (replace with real data)
         available_experts = ["Kaidatu", "Musa", "Hawa", "Aminata", "Alhaji"]
 
-        print("Available Experts in {}: {}".format(district, available_experts))
+        print("Available Experts in {}: ".format(district))
+        for i, expert in enumerate(available_experts, 1):
+            print(f"{i}. {expert}")
 
         # Let the farmer choose an expert
-        chosen_expert = input("Choose an expert to message: ")
+        expert_choice = input("Choose an expert by number to message: ")
 
-        if chosen_expert in available_experts:
-            message = input("Write your message to {}:".format(chosen_expert))
-            print("Message sent to {}. They will respond soon!".format(chosen_expert))
-        else:
-            print("Invalid expert choice. Please select from the available experts.")
+        try:
+            expert_choice = int(expert_choice)
+            if 1 <= expert_choice <= len(available_experts):
+                chosen_expert = available_experts[expert_choice - 1]
+                message = input("Write your message to {}:".format(chosen_expert))
+                print("Message sent to {}. They will respond soon!".format(chosen_expert))
+            else:
+                print("Invalid expert choice. Please select a number from the available experts.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
 
     def weather_information(self):
         """
