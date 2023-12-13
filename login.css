@@ -3,18 +3,17 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* Prevent scrolling on the entire page */
 }
 
 .container {
     display: flex;
     height: 100vh;
     overflow: hidden;
-    /* Prevent the image from overflowing */
 }
 
 .image-container,
-.login-container {
+.login-container,
+.register-container {
     flex: 1;
     overflow: hidden;
     position: relative;
@@ -28,30 +27,33 @@ body {
     justify-content: center;
     text-align: center;
     color: #ffffff;
-    /* Text color for the content in image-container */
 }
 
-
-.login-container {
+.login-container,
+.register-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
     position: relative;
-    /* Position relative for absolute positioning */
+    margin-top: 20px;
+
 }
 
-.login-box {
+.login-box,
+.register-box {
     width: 300px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    /* Position absolute for floating effect */
+    margin-top: 20px;
+    /* Adjust the margin as needed */
 }
 
-input {
+input,
+select {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -68,25 +70,22 @@ button {
     width: 100%;
 }
 
-.forgot-password {
+.login-link {
     text-align: center;
     margin-top: 10px;
 }
 
-/* Additional Styles for Title and Welcome Message */
 .title {
     text-align: center;
     padding: 20px;
     font-size: 24px;
     color: #ffffff;
-    /* Text color for the title */
 }
 
 .welcome-message {
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    /* Text color for the welcome message */
 }
 
 .logo {
@@ -94,7 +93,5 @@ button {
     top: 10px;
     left: 10px;
     max-width: 50px;
-    /* Adjust the max-width as needed */
     max-height: 50px;
-    /* Adjust the max-height as needed */
 }
