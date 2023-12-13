@@ -11,4 +11,3 @@ function toggleForm(formId) {
         registerContainer.style.display = "none";
     }
 }
-
